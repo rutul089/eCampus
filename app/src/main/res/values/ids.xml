@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Font Identifiers-->
+    <string name="BOLD">BOLD</string>
+    <string name="BOLDITALIC">BOLDITALIC</string>
+    <string name="EXTRABOLD">EXTRABOLD</string>
+    <string name="EXTRALIGHT">EXTRALIGHT</string>
+    <string name="MEDIUM">MEDIUM</string>
+    <string name="THIN">THIN</string>
+    <string name="ROMAN">ROMAN</string>
+    <string name="OMAN">OMAN</string>
+    <string name="STD">STD</string>
+
+    <!--Font Path-->
+    <string name="FONT_BOLD">fonts/helveticaneueltstd-black.otf</string>
+    <string name="FONT_BOLDITALIC">fonts/helveticaneueltstd-extended-italic.otf</string>
+    <string name="FONT_EXTRABOLD">fonts/helveticaneueltstd-extended.otf</string>
+    <string name="FONT_EXTRALIGHT">fonts/helveticaneueltstd-ultralight.otf</string>
+    <string name="FONT_MEDIUM">fonts/helveticaneueltstd-medium.otf</string>
+    <string name="FONT_THIN">fonts/helveticaneueltstd-thin.otf</string>
+    <string name="FONT_ROMAN">fonts/helveticaneueltstd-roman.otf</string>
+    <string name="FONT_OMAN">fonts/helveticaneueltstd-light.otf</string>
+    <string name="FONT_STD">fonts/helveticaneueltstd.otf</string>
+
+    <!--For Normal Login-->
+    <string name="PREFS_LOGGED_IN">prefs_logged_in</string>
+    <string name="PREFS_LOGGED_IN_USER_DETAILS">prefs_logged_in_user_details</string>
+    <string name="PREFS_LOGGED_IN_USER">prefs_logged_in_user</string>
+    <string name="PREFS_USER_ID">user_id</string>
+
+</resources>
+
