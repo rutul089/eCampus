@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">@color/colorBlue</color>
+    <color name="colorPrimaryDark">@color/colorBlue</color>
+    <color name="colorAccent">@color/colorCyan</color>
+
+    <!--Application Main Theme Color Set-->
+    <color name="colorBlue">#2B78D4</color>
+    <color name="colorLightCyan">#38ABB2</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#333333</color>
+    <color name="colorGray">#666666</color>
+    <color name="colorGreen">#46B6A6</color>
+    <color name="colorCyan">#4ABFC6</color>
+    <color name="colorLightBlue">#EAEDF2</color>
+    <!-- End -->
 </resources>
