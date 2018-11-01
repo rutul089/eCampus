@@ -19,9 +19,24 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url "https://jitpack.io" }
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+ext {
+    applicationId = "rutul.com.ecapus"
+    versionCode = 1
+    versionName = "0.0.1b"
+    compileSdkVersion = 28
+    buildToolsVersion = '28.0.3'
+    minSdkVersion = 21
+    targetSdkVersion = 28
+    supportLibVersion = '28.0.0'
+    solidVersion = '2.0.3'
+    retrofitVersion = '2.4.0'
+    roomVersion = '1.1.1'
+    archLifecycleVersion = '1.1.1'
 }
