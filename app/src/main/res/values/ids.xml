@@ -3,25 +3,18 @@
 
     <!--Font Identifiers-->
     <string name="BOLD">BOLD</string>
-    <string name="BOLDITALIC">BOLDITALIC</string>
-    <string name="EXTRABOLD">EXTRABOLD</string>
-    <string name="EXTRALIGHT">EXTRALIGHT</string>
+    <string name="LIGHT">LIGHT</string>
     <string name="MEDIUM">MEDIUM</string>
-    <string name="THIN">THIN</string>
-    <string name="ROMAN">ROMAN</string>
-    <string name="OMAN">OMAN</string>
-    <string name="STD">STD</string>
+    <string name="REGULAR">REGULAR</string>
+    <string name="SEMIBOLD">SEMIBOLD</string>
+
 
     <!--Font Path-->
-    <string name="FONT_BOLD">fonts/helveticaneueltstd-black.otf</string>
-    <string name="FONT_BOLDITALIC">fonts/helveticaneueltstd-extended-italic.otf</string>
-    <string name="FONT_EXTRABOLD">fonts/helveticaneueltstd-extended.otf</string>
-    <string name="FONT_EXTRALIGHT">fonts/helveticaneueltstd-ultralight.otf</string>
-    <string name="FONT_MEDIUM">fonts/helveticaneueltstd-medium.otf</string>
-    <string name="FONT_THIN">fonts/helveticaneueltstd-thin.otf</string>
-    <string name="FONT_ROMAN">fonts/helveticaneueltstd-roman.otf</string>
-    <string name="FONT_OMAN">fonts/helveticaneueltstd-light.otf</string>
-    <string name="FONT_STD">fonts/helveticaneueltstd.otf</string>
+    <string name="FONT_BOLD">fonts/montserrat-bold.otf</string>
+    <string name="FONT_LIGHT">fonts/montserrat-light.otf</string>
+    <string name="FONT_MEDIUM">fonts/montserrat-medium.otf</string>
+    <string name="FONT_REGULAR">fonts/montserrat-regular.otf</string>
+    <string name="FONT_SEMIBOLD">fonts/montserrat-semiBold.otf</string>
 
     <!--For Normal Login-->
     <string name="PREFS_LOGGED_IN">prefs_logged_in</string>
