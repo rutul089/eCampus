@@ -12,15 +12,18 @@
     <string name="email">Email</string>
     <string name="text_sign_up">Don\'t have an account ? <s>Sign Up</s></string>
     <!-- end-->
-    <!-- About us --><string name="social_network">Social Network</string>
+    <!-- About us -->
+    <string name="social_network">Social Network</string>
     <!-- End -->
-    
+
     <!-- errmsg-->
     <string name="err_mail">Please enter valid email</string>
     <string name="err_password">Please enter valid password</string>
     <string name="find_out_more_news">Find Out More News ... </string>
     <!-- end-->
-
+    <!-- Btn -->
+    <string name="btn_book_an_appointment">Book an Appointment</string>
+    <!-- End -->
     <!--
     1.My Profile
     2.Job For you

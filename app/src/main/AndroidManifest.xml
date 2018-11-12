@@ -16,9 +16,7 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name=".activity.SplashActivity"
-            android:screenOrientation="portrait">
-
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity android:name=".MainActivity" />
         <activity
             android:name=".activity.LoginActivity"
@@ -36,6 +34,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.JobDetailActivity"></activity>
     </application>
 
 </manifest>
