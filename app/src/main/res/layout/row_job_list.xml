@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/iv_placeholder"
+        android:layout_width="@dimen/height_180px"
+        android:layout_height="@dimen/height_180px"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <rutul.com.ecampus.components.CustomTextView
+        android:id="@+id/tv_job_heading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:padding="@dimen/dimen_1"
+        android:text="Assistant Manager - Data Analytics - Chennai"
+        android:textColor="@color/colorTextJobList"
+        android:textSize="@dimen/dimen_50px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_placeholder"
+        app:layout_constraintTop_toTopOf="parent"
+        app:myFont="@string/MEDIUM" />
+
+    <rutul.com.ecampus.components.CustomTextView
+        android:id="@+id/tv_company_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_2"
+        android:padding="@dimen/dimen_1"
+        android:text="LatentView Analytics Private Limited "
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/dimen_48px"
+        app:layout_constraintEnd_toEndOf="@+id/tv_job_heading"
+        app:layout_constraintStart_toStartOf="@+id/tv_job_heading"
+        app:layout_constraintTop_toBottomOf="@+id/tv_job_heading"
+        app:myFont="@string/REGULAR" />
+
+    <rutul.com.ecampus.components.CustomTextView
+        android:id="@+id/tv_experience"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_2"
+        android:drawableStart="@drawable/ic_experience"
+        android:drawablePadding="@dimen/dimen_5"
+        android:lines="1"
+        android:maxLines="1"
+        android:padding="@dimen/dimen_1"
+        android:text="1 -2  Years"
+        android:textColor="@color/colorGreen"
+        android:textSize="@dimen/dimen_48px"
+        app:layout_constraintEnd_toEndOf="@+id/tv_job_heading"
+        app:layout_constraintStart_toStartOf="@+id/tv_job_heading"
+        app:layout_constraintTop_toBottomOf="@+id/tv_company_name"
+        app:myFont="@string/REGULAR" />
+
+    <rutul.com.ecampus.components.CustomTextView
+        android:id="@+id/tv_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_2"
+        android:layout_marginBottom="8dp"
+        android:drawableStart="@drawable/ic_navigation"
+        android:drawablePadding="@dimen/dimen_5"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="@dimen/dimen_1"
+        android:text="4671 Western NY"
+        android:textColor="@color/colorGreen"
+        android:textSize="@dimen/dimen_48px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_job_heading"
+        app:layout_constraintStart_toStartOf="@+id/tv_job_heading"
+        app:layout_constraintTop_toBottomOf="@+id/tv_experience"
+        app:myFont="@string/REGULAR" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,5 +1,6 @@
 package rutul.com.ecampus.activity;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 
@@ -24,6 +25,9 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.colorDarkGreen));
+        }
         setContentView(R.layout.activity_login);
     }
 

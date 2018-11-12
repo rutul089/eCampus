@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_view_pager"
+    android:layout_centerInParent="true">
+
+
+    <ImageView
+        android:id="@+id/iv_slider_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_view_pager"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg2" />
+
+    <rutul.com.ecampus.components.CustomTextView
+        android:id="@+id/tv_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:lines="1"
+        android:scrollHorizontally="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dimen_48px"
+        app:layout_constraintBottom_toTopOf="@+id/tv_description"
+        app:layout_constraintEnd_toEndOf="@+id/tv_description"
+        app:layout_constraintStart_toStartOf="@+id/tv_description"
+        app:myFont="@string/REGULAR"
+        tools:text="11 Aug 2018" />
+    />
+
+    <rutul.com.ecampus.components.CustomTextView
+        android:id="@+id/tv_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:lines="2"
+        android:scrollHorizontally="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dimen_90px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:myFont="@string/REGULAR"
+        tools:text="Labore irure excepteur deserunt qui. Occaecat do consequat velit adipisicing consequat reprehenderit incididunt duis irure ea consequat ipsum Lorem dolor" />
+    />
+</android.support.constraint.ConstraintLayout>

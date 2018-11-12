@@ -2,7 +2,7 @@
     <string name="app_name">eCampus</string>
     <string name="something_went_wrong">Something went wrong</string>
     <string name="no_internet_connection">No internet connection</string>
-
+    <string name="dummy_text">Nascetur. Proin Donec velit nullam. Tellus nonummy ornare feugiat fringilla vel, hac litora. A hymenaeos nascetur sociosqu fames at ad euismod varius, libero mollis lobortis, urna litora magna massa porta elementum, dignissim platea turpis auctor Vel lacus.\n\nUllamcorper dolor condimentum primis leo lacinia habitant mus, tellus Potenti eget duis Elementum mus a erat dui. Tortor vestibulum et, ac penatibus cubilia magnis. Integer platea. Torquent cursus suscipit per odio. Ultrices. Platea convallis potenti ac morbi, natoque aenean aptent ornare volutpat elit Praesent aenean ac mus dolor quis pharetra porttitor justo parturient. Nisl, sollicitudin eleifend sollicitudin cubilia vitae.\n\nCommodo vehicula dignissim mauris.</string>
     <!-- Login -->
     <string name="username">Username</string>
     <string name="password">Password</string>
@@ -12,10 +12,24 @@
     <string name="email">Email</string>
     <string name="text_sign_up">Don\'t have an account ? <s>Sign Up</s></string>
     <!-- end-->
-
+    <!-- About us --><string name="social_network">Social Network</string>
+    <!-- End -->
+    
     <!-- errmsg-->
     <string name="err_mail">Please enter valid email</string>
     <string name="err_password">Please enter valid password</string>
+    <string name="find_out_more_news">Find Out More News ... </string>
     <!-- end-->
 
+    <!--
+    1.My Profile
+    2.Job For you
+    3.Terms of User
+    4.Settings
+    5.About collage / contact us
+    6.Guide Lines
+    7.Appoitment
+    8.Notification
+    9.Events and News
+    -->
 </resources>

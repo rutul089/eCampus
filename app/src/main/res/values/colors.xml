@@ -13,5 +13,8 @@
     <color name="colorGreen">#46B6A6</color>
     <color name="colorCyan">#4ABFC6</color>
     <color name="colorLightBlue">#3AB5BD</color>
+    <color name="colorTextJobList">#00829A</color>
+    <color name="colorDarkGreen">#0a9465</color>
+    <!-- 8D949C -->
     <!-- End -->
 </resources>

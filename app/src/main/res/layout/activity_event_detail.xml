@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".activity.EventDetailActivity">
+
+    <include
+        android:id="@+id/iv_header"
+        layout="@layout/header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_event"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_view_pager"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg2" />
+
+            <rutul.com.ecampus.components.CustomTextView
+                android:id="@+id/tv_event_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:maxLines="1"
+                android:padding="@dimen/dimen_1"
+                android:text="13 march 2018"
+                android:textColor="@color/colorGreen"
+                android:textSize="@dimen/dimen_48px"
+                app:myFont="@string/REGULAR" />
+
+            <rutul.com.ecampus.components.CustomTextView
+                android:id="@+id/tv_event_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:padding="@dimen/dimen_1"
+                android:text="Assistant Manager - Data Analytics - Chennai"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dimen_60px"
+                app:myFont="@string/MEDIUM" />
+
+            <rutul.com.ecampus.components.CustomTextView
+                android:id="@+id/tv_event_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_marginEnd="@dimen/dimen_8"
+
+                android:lineSpacingExtra="@dimen/dimen_2"
+                android:padding="@dimen/dimen_1"
+                android:text="@string/dummy_text"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/dimen_50px"
+                app:myFont="@string/REGULAR" />
+
+            <rutul.com.ecampus.components.CustomTextView
+                android:id="@+id/tv_event_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:padding="@dimen/dimen_1"
+                android:text="@string/find_out_more_news"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dimen_48px"
+                app:myFont="@string/MEDIUM" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
