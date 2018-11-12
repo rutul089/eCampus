@@ -71,7 +71,7 @@ public class SplashActivity extends BaseActivity {
             startDesireIntent(MainActivity.class, mContext, false, 0, null);
             finish();
         } else {
-            startDesireIntent(MainActivity.class, mContext, false, 0, null);
+            startDesireIntent(LoginActivity.class, mContext, false, 0, null);
             finish();
         }
     }

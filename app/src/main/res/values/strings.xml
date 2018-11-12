@@ -2,4 +2,20 @@
     <string name="app_name">eCampus</string>
     <string name="something_went_wrong">Something went wrong</string>
     <string name="no_internet_connection">No internet connection</string>
+
+    <!-- Login -->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="btn_sign_in">Sign In</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="text_sign_up">Don\'t have an account ? <s>Sign Up</s></string>
+    <!-- end-->
+
+    <!-- errmsg-->
+    <string name="err_mail">Please enter valid email</string>
+    <string name="err_password">Please enter valid password</string>
+    <!-- end-->
+
 </resources>
