@@ -30,7 +30,7 @@
         app:layout_constraintStart_toStartOf="@+id/tv_description"
         app:myFont="@string/REGULAR"
         tools:text="11 Aug 2018" />
-    />
+
 
     <rutul.com.ecampus.components.CustomTextView
         android:id="@+id/tv_description"

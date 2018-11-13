@@ -15,21 +15,96 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:layout_height="180dp"
         android:background="@drawable/main_bg_blue"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/header">
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/iv_logo"
-            android:layout_width="@dimen/height_150px"
-            android:layout_height="@dimen/height_150px"
+            android:layout_width="@dimen/height_180px"
+            android:layout_height="@dimen/height_180px"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/dimen_10"
-            android:src="@drawable/ic_placeholder" />
+            android:src="@drawable/ic_placeholder"
+            app:civ_border_color="@color/colorWhite"
+            app:civ_border_width="2dp" />
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:id="@+id/tv_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dimen_5"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginEnd="@dimen/dimen_5"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="LatentView Analytics Private Limited"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_60px"
+            android:visibility="visible"
+            app:myFont="@string/MEDIUM" />
+
+        <RatingBar
+            android:id="@+id/rating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:isIndicator="false"
+            android:maxHeight="@dimen/height_90px"
+            android:minHeight="@dimen/height_90px"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:numStars="5"
+            android:progressDrawable="@drawable/ratingstars"
+            android:rating="1.5"
+            android:secondaryProgressTint="@color/colorWhite"
+            android:stepSize="0.5" />
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dimen_5"
+            android:layout_marginEnd="@dimen/dimen_5"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="453 , Upper Manhtan , NY"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_48px"
+            android:visibility="visible"
+            app:myFont="@string/REGULAR" />
     </LinearLayout>
+
+    <rutul.com.ecampus.components.BadgedTabLayout
+        android:id="@+id/tl_job_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_110px"
+        android:background="@drawable/main_bg_blue"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/colorCyan"
+        app:tabIndicatorHeight="3dp"
+        app:tabBackground = "@android:color/transparent"
+        app:tabMode="fixed"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabSelectedTextColor="@color/colorWhite"
+        app:tabTextColor="@color/colorWhite" />
+
+    <rutul.com.ecampus.components.CustomViewPager
+        android:id="@+id/vp_job_detail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toTopOf="@+id/bt_apply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tl_job_detail" />
 
     <rutul.com.ecampus.components.CustomButton
         android:id="@+id/bt_apply"
@@ -44,5 +119,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:myFont="@string/MEDIUM" />
+
 
 </android.support.constraint.ConstraintLayout>

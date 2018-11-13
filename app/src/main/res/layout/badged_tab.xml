@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageview_tab_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:visibility="gone" />
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:id="@+id/textview_tab_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxWidth="@dimen/tab_text_max_width"
+            android:singleLine="false"
+            android:text="Section 1"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/dimen_48px"
+            app:myFont="@string/REGULAR" />
+
+    </LinearLayout>
+
+    <rutul.com.ecampus.components.CustomTextView
+        android:id="@+id/textview_tab_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/badge_background"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:minWidth="20dp"
+        android:minHeight="20dp"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:textColor="@color/colorBlue"
+        android:textSize="@dimen/dimen_36px"
+        android:visibility="gone"
+        app:myFont="@string/REGULAR" />
+
+</LinearLayout>
