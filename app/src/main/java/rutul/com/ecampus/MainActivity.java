@@ -16,6 +16,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import rutul.com.ecampus.activity.BaseActivity;
+import rutul.com.ecampus.activity.JobListActivity;
 import rutul.com.ecampus.adapter.DashBoardIconAdapter;
 import rutul.com.ecampus.adapter.VPDashBoardAdapter;
 import rutul.com.ecampus.components.CustomViewPager;
@@ -177,7 +178,7 @@ public class MainActivity extends BaseActivity implements VPDashBoardAdapter.Sli
                 HelperMethods.showToast("MYPROFILE", mContext);
                 break;
             case JOBFORYOU:
-                HelperMethods.showToast("JOBFORYOU", mContext);
+                startDesireIntent(JobListActivity.class, mContext, false, 0, null);
                 break;
             case APPOITMENT:
                 HelperMethods.showToast("APPOITMENT", mContext);

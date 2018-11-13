@@ -2,12 +2,14 @@ package rutul.com.ecampus.activity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -25,7 +27,7 @@ public abstract class BaseActivity extends ActivityManagePermission {
     private ImageView ivHeaderBg, ivBack, ivNotification;
     private CustomTextView tvAppTitle;
     private int mivHeaderBgColor, mHeaderTittleColor;
-
+    protected Drawable dividerDrawable;
 
     public void setHeaderView(@Nullable int ivHeaderBgColor, @Nullable boolean showBackIcon,
                               @Nullable String headerTitle, @Nullable int headerTitleColor, @Nullable boolean showNotificationIcon) {
@@ -52,6 +54,7 @@ public abstract class BaseActivity extends ActivityManagePermission {
         if (mBundle == null) {
             mBundle = new Bundle();
         }
+        dividerDrawable = ContextCompat.getDrawable(mContext, R.drawable.item_decoration_divider);
     }
 
     @Override
