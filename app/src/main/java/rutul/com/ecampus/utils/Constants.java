@@ -8,6 +8,7 @@ public class Constants {
     public static final String TAG_JOB_INFO = "Job Info";
     public static final String TAG_REVIEW = "Review";
     public static final String TAG_DASH_BOARD = "Dash Board";
+    public static final String TAG_EVENT_NEWS = "Event & News";
 
     public enum SCREEN {
         MYPROFILE("My Profile"),

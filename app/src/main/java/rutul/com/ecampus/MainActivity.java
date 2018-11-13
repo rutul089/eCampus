@@ -16,6 +16,8 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import rutul.com.ecampus.activity.BaseActivity;
+import rutul.com.ecampus.activity.EventDetailActivity;
+import rutul.com.ecampus.activity.EventListActivity;
 import rutul.com.ecampus.activity.JobListActivity;
 import rutul.com.ecampus.adapter.DashBoardIconAdapter;
 import rutul.com.ecampus.adapter.VPDashBoardAdapter;
@@ -147,6 +149,7 @@ public class MainActivity extends BaseActivity implements VPDashBoardAdapter.Sli
 
     @Override
     public void onSliderImageClicked(SliderData sliderDataModel) {
+        startDesireIntent(EventDetailActivity.class, mContext, false, 0, null);
     }
 
 
@@ -187,7 +190,7 @@ public class MainActivity extends BaseActivity implements VPDashBoardAdapter.Sli
                 HelperMethods.showToast("ABOUTCOLLAGE", mContext);
                 break;
             case EVENTSANDNEWS:
-                HelperMethods.showToast("EVENTSANDNEWS", mContext);
+                startDesireIntent(EventListActivity.class, mContext, false, 0, null);
                 break;
             case DOYOUKNOW:
                 HelperMethods.showToast("DOYOUKNOW", mContext);

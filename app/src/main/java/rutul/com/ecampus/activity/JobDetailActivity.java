@@ -2,6 +2,7 @@ package rutul.com.ecampus.activity;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 
@@ -16,7 +17,7 @@ import rutul.com.ecampus.fragment.JobInfoFragment;
 import rutul.com.ecampus.fragment.ReviewFragment;
 import rutul.com.ecampus.utils.Constants;
 
-public class JobDetailActivity extends BaseActivity {
+public class JobDetailActivity extends BaseActivity implements View.OnClickListener {
 
     private ImageView iv_logo;
     private CustomTextView tv_company_name, tv_address;
@@ -25,6 +26,7 @@ public class JobDetailActivity extends BaseActivity {
     private CustomViewPager vp_job_detail;
     private CustomButton bt_apply;
     private TabLayoutAdapter tabLayoutAdapter;
+    private ImageView ivBack;
 
 
     @Override
@@ -43,11 +45,12 @@ public class JobDetailActivity extends BaseActivity {
         tl_job_detail = findViewById(R.id.tl_job_detail);
         vp_job_detail = findViewById(R.id.vp_job_detail);
         bt_apply = findViewById(R.id.bt_apply);
+        ivBack = findViewById(R.id.ivBack);
     }
 
     @Override
     public void setListener() {
-
+        ivBack.setOnClickListener(this);
     }
 
     @Override
@@ -70,5 +73,14 @@ public class JobDetailActivity extends BaseActivity {
         vp_job_detail.setAdapter(tabLayoutAdapter);
         tl_job_detail.setupWithViewPager(vp_job_detail);
         tl_job_detail.setBadgeText(2, "45");
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.ivBack:
+                finish();
+                break;
+        }
     }
 }

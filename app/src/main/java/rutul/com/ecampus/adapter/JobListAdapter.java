@@ -15,9 +15,11 @@ public class JobListAdapter extends RecyclerView.Adapter<JobListAdapter.ViewHold
     private Context mContext;
     private ItemCommentClickListener itemCommentClickListener;
 
-    public JobListAdapter(Context mContext) {
+    public JobListAdapter(Context mContext, ItemCommentClickListener itemCommentClickListener) {
         this.mContext = mContext;
+        this.itemCommentClickListener = itemCommentClickListener;
     }
+
 
     @NonNull
     @Override
@@ -26,8 +28,8 @@ public class JobListAdapter extends RecyclerView.Adapter<JobListAdapter.ViewHold
     }
 
     @Override
-    public void onBindViewHolder(@NonNull JobListAdapter.ViewHolder viewHolder, int i) {
-
+    public void onBindViewHolder(@NonNull JobListAdapter.ViewHolder viewHolder, int position) {
+        viewHolder.itemView.setOnClickListener(view -> itemCommentClickListener.actionRequest(position));
     }
 
     @Override

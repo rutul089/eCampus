@@ -1,9 +1,9 @@
 package rutul.com.ecampus.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -11,7 +11,8 @@ import rutul.com.ecampus.R;
 import rutul.com.ecampus.adapter.JobListAdapter;
 import rutul.com.ecampus.components.DividerItemDecoration;
 
-public class JobListActivity extends BaseActivity implements View.OnClickListener {
+public class JobListActivity extends BaseActivity implements View.OnClickListener, JobListAdapter.ItemCommentClickListener {
+    private static final String TAG = JobListActivity.class.getSimpleName();
     RecyclerView rv_job_list;
     ImageView ivBack;
 
@@ -38,7 +39,7 @@ public class JobListActivity extends BaseActivity implements View.OnClickListene
         rv_job_list.setHasFixedSize(true);
         rv_job_list.setLayoutManager(new LinearLayoutManager(mContext, LinearLayoutManager.VERTICAL, false));
         rv_job_list.addItemDecoration(new DividerItemDecoration(dividerDrawable));
-        JobListAdapter jobListAdapter = new JobListAdapter(mContext);
+        JobListAdapter jobListAdapter = new JobListAdapter(mContext, JobListActivity.this);
         rv_job_list.setAdapter(jobListAdapter);
     }
 
@@ -50,5 +51,11 @@ public class JobListActivity extends BaseActivity implements View.OnClickListene
                 break;
         }
 
+    }
+
+    @Override
+    public void actionRequest(int position) {
+        Log.i(TAG, "actionRequest:JobList " + position);
+        startDesireIntent(JobDetailActivity.class, mContext, false, 0, null);
     }
 }
