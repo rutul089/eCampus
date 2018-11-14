@@ -5,7 +5,6 @@ import android.view.View;
 import android.widget.ImageView;
 
 import rutul.com.ecampus.R;
-import rutul.com.ecampus.utils.HelperMethods;
 
 public class EventDetailActivity extends BaseActivity implements View.OnClickListener {
     ImageView ivBack, ivNotification;
@@ -40,7 +39,7 @@ public class EventDetailActivity extends BaseActivity implements View.OnClickLis
                 finish();
                 break;
             case R.id.ivNotification:
-                HelperMethods.showToast("Notification", mContext);
+                startDesireIntent(NotificationActivity.class, mContext, false, 0, mBundle);
                 break;
         }
 

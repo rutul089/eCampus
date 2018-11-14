@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <rutul.com.ecampus.components.CustomTextView
+        android:id="@+id/tv_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:padding="@dimen/dimen_2"
+        android:text="11 March 2018"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/dimen_48px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:myFont="@string/REGULAR" />
+
+    <rutul.com.ecampus.components.CustomTextView
+        android:id="@+id/tv_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:padding="@dimen/dimen_2"
+        android:text="Proffessional Statment"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/dimen_54px"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/tv_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:myFont="@string/SEMIBOLD" />
+
+    <rutul.com.ecampus.components.CustomTextView
+        android:id="@+id/tv_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginBottom="8dp"
+        android:lineSpacingExtra="@dimen/dimen_2"
+        android:padding="@dimen/dimen_2"
+        android:text="Lorena da doa ao jao joajo joia joijaoi joajo joajd ojao joaj ojao joiaj oidjaoi jdoiaj oidjaoi jdoiajd oijaoid joiajd oija oidjaoijd oiajdoija oidja oijaoi jdao jdoaj odaj odad"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/dimen_48px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label"
+        app:myFont="@string/REGULAR" />
+
+</android.support.constraint.ConstraintLayout>

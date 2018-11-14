@@ -1,14 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
     tools:context=".fragment.CompanyInfoFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_8"
+        android:layout_marginBottom="@dimen/dimen_5"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <rutul.com.ecampus.components.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Openxcell Technolabs Pvt Ltd"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_64px"
+            app:myFont="@string/REGULAR" />
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:id="@+id/tv_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_3"
+            android:drawableStart="@drawable/ic_call"
+            android:drawablePadding="@dimen/dimen_8"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="+88012945457545"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_60px"
+            app:myFont="@string/REGULAR" />
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:id="@+id/tv_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_3"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="https://www.openxcell.com/"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/dimen_60px"
+            app:myFont="@string/REGULAR" />
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:visibility="visible"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_3"
+            android:drawableStart="@drawable/ic_email_gray"
+            android:drawablePadding="@dimen/dimen_8"
+            android:maxLines="1"
+            android:text="abc@abc.com"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_60px"
+            app:myFont="@string/REGULAR" />
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:id="@+id/tv_company_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:lineSpacingExtra="@dimen/dimen_2"
+            android:text="We are hiring Android developers who will be responsible for the development and maintenance of applications aimed at a vast number of diverse Android devices."
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_60px"
+            app:myFont="@string/REGULAR" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_300px"
+                    android:layout_margin="@dimen/dimen_5"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/banner2" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_300px"
+                    android:layout_margin="@dimen/dimen_5"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg2" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_300px"
+                    android:layout_margin="@dimen/dimen_5"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_300px"
+                    android:layout_margin="@dimen/dimen_5"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/banner2" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_300px"
+                    android:layout_margin="@dimen/dimen_5"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg1" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_300px"
+                    android:layout_margin="@dimen/dimen_5"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg2" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

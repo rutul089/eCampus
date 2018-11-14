@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/border"
     android:gravity="center"
     android:orientation="vertical"
@@ -16,7 +17,7 @@
         android:layout_gravity="center"
         android:layout_weight="1"
         android:scaleType="center"
-        android:src="@drawable/ic_settings" />
+        android:src="@drawable/ic_settings_small" />
 
     <rutul.com.ecampus.components.CustomTextView
         android:id="@+id/tv_dash_label"
@@ -25,7 +26,7 @@
         android:layout_weight="1"
         android:gravity="center_horizontal"
         android:lines="2"
-        android:text="Global Team News"
+        tools:text="Global Team News"
         android:textAlignment="center"
         android:textColor="#B074ED"
         android:textSize="@dimen/dimen_60px"

@@ -40,7 +40,9 @@
         <activity
             android:name=".activity.JobListActivity"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".activity.EventListActivity"></activity>
+        <activity android:name=".activity.EventListActivity" />
+        <activity android:name=".activity.NotificationActivity" />
+        <activity android:name=".activity.AppointmentActivity"></activity>
     </application>
 
 </manifest>

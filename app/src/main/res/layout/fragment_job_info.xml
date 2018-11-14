@@ -1,14 +1,352 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dimen_2"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
     tools:context=".fragment.JobInfoFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_8"
+        android:layout_marginBottom="@dimen/dimen_5"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <rutul.com.ecampus.components.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Job Description"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_60px"
+            app:myFont="@string/MEDIUM" />
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:id="@+id/tv_job_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2"
+            android:lineSpacingExtra="@dimen/dimen_2"
+            android:text="We are hiring Android developers who will be responsible for the development and maintenance of applications aimed at a vast number of diverse Android devices."
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/dimen_54px"
+            app:myFont="@string/REGULAR" />
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:maxLines="1"
+            android:text="Job Detail"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_60px"
+            app:myFont="@string/MEDIUM" />
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:id="@+id/tv_experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2"
+            android:drawableStart="@drawable/ic_experience"
+            android:drawablePadding="@dimen/dimen_5"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="@dimen/dimen_1"
+            android:text="1 -2  Years"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/dimen_54px"
+            app:myFont="@string/REGULAR" />
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2"
+            android:drawableStart="@drawable/ic_navigation"
+            android:drawablePadding="@dimen/dimen_5"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:padding="@dimen/dimen_1"
+            android:text="4671 Western NY"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/dimen_54px"
+            app:myFont="@string/REGULAR" />
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:id="@+id/tv_salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2"
+            android:drawableStart="@drawable/ic_salary"
+            android:drawablePadding="@dimen/dimen_5"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:padding="@dimen/dimen_1"
+            android:text="1.7 L - 3.5 PA"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/dimen_54px"
+            app:myFont="@string/REGULAR" />
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:id="@+id/tv_posted_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2"
+            android:drawableStart="@drawable/ic_calendar"
+            android:drawablePadding="@dimen/dimen_5"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:padding="@dimen/dimen_1"
+            android:text="Posted on Nov 15 , 2018"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/dimen_54px"
+            app:myFont="@string/REGULAR" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2"
+            android:orientation="horizontal">
+
+            <rutul.com.ecampus.components.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="@dimen/dimen_1"
+                android:text="Role :"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/REGULAR" />
+
+            <rutul.com.ecampus.components.CustomTextView
+                android:id="@+id/tv_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_5"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:layout_marginEnd="@dimen/dimen_2"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="@dimen/dimen_1"
+                android:text="Software Developer"
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/REGULAR" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2"
+            android:orientation="horizontal">
+
+            <rutul.com.ecampus.components.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="@dimen/dimen_1"
+                android:text="Employment Type"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/REGULAR" />
+
+            <rutul.com.ecampus.components.CustomTextView
+                android:id="@+id/tv_employment_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_5"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:layout_marginEnd="@dimen/dimen_2"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="@dimen/dimen_1"
+                android:text="Full Time"
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/REGULAR" />
+
+        </LinearLayout>
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2"
+            android:maxLines="1"
+            android:text="Functional Area"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_60px"
+            app:myFont="@string/MEDIUM" />
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:id="@+id/tv_statment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2"
+            android:lineSpacingExtra="@dimen/dimen_2"
+            android:text="IT Software - Application Programming , Maintenance"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/dimen_54px"
+            app:myFont="@string/REGULAR" />
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:maxLines="1"
+            android:text="Responsibilities"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_60px"
+            app:myFont="@string/MEDIUM" />
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:id="@+id/tv_responsibilities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2"
+            android:lineSpacingExtra="@dimen/dimen_2"
+            android:text="Optimize existing code and implement new functionalities for the mobile application."
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/dimen_54px"
+            app:myFont="@string/REGULAR" />
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:maxLines="1"
+            android:text="Keyskills"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_60px"
+            app:myFont="@string/MEDIUM" />
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:id="@+id/tv_key_skills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2"
+            android:lineSpacingExtra="@dimen/dimen_2"
+            android:text="android , Android develpoer ,eclipse , android studio , SDK"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/dimen_54px"
+            app:myFont="@string/REGULAR" />
+
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:maxLines="1"
+            android:text="Education"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_60px"
+            app:myFont="@string/MEDIUM" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2"
+            android:orientation="horizontal">
+
+            <rutul.com.ecampus.components.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="@dimen/dimen_1"
+                android:text="UG :"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/REGULAR" />
+
+            <rutul.com.ecampus.components.CustomTextView
+                android:id="@+id/tv_ug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_5"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:layout_marginEnd="@dimen/dimen_2"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="@dimen/dimen_1"
+                android:text="B.Tech/B.E. - Any Specialization, Computers"
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/REGULAR" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2"
+            android:orientation="horizontal">
+
+            <rutul.com.ecampus.components.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="@dimen/dimen_1"
+                android:text="PG :"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/REGULAR" />
+
+            <rutul.com.ecampus.components.CustomTextView
+                android:id="@+id/tv_pg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_5"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:layout_marginEnd="@dimen/dimen_2"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="@dimen/dimen_1"
+                android:text="M.Tech - Any Specialization, Computers"
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/REGULAR" />
+
+        </LinearLayout>
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:maxLines="1"
+            android:text="Desired Candidate Profile"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_60px"
+            app:myFont="@string/MEDIUM" />
+
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:id="@+id/tv_company_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:lineSpacingExtra="@dimen/dimen_2"
+            android:text="Expert level knowledge of Java / Kotlin, Android SDK, Gradle, Git and proficient in Android Studio and other tools"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/dimen_54px"
+            app:myFont="@string/REGULAR" />
+
+    </LinearLayout>
+
+</ScrollView>

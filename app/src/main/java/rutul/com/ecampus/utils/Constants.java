@@ -9,11 +9,13 @@ public class Constants {
     public static final String TAG_REVIEW = "Review";
     public static final String TAG_DASH_BOARD = "Dash Board";
     public static final String TAG_EVENT_NEWS = "Event & News";
+    public static final String TAG_NOTIFICATION = "Notification";
+    public static final String TAG_APPOINTMENT = "Appointment";
 
     public enum SCREEN {
         MYPROFILE("My Profile"),
         JOBFORYOU("Job For you"),
-        APPOITMENT("Appoitment"),
+        APPOITMENT("Appointment"),
         ABOUTCOLLAGE ("About collage "),
         EVENTSANDNEWS("Events and News"),
         DOYOUKNOW("Do You Know"),

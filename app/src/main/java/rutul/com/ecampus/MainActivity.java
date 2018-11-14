@@ -15,10 +15,12 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import rutul.com.ecampus.activity.AppointmentActivity;
 import rutul.com.ecampus.activity.BaseActivity;
 import rutul.com.ecampus.activity.EventDetailActivity;
 import rutul.com.ecampus.activity.EventListActivity;
 import rutul.com.ecampus.activity.JobListActivity;
+import rutul.com.ecampus.activity.NotificationActivity;
 import rutul.com.ecampus.adapter.DashBoardIconAdapter;
 import rutul.com.ecampus.adapter.VPDashBoardAdapter;
 import rutul.com.ecampus.components.CustomViewPager;
@@ -155,15 +157,15 @@ public class MainActivity extends BaseActivity implements VPDashBoardAdapter.Sli
 
     private List<DashBoardIconModel> getAllItemList() {
         List<DashBoardIconModel> allItems = new ArrayList<DashBoardIconModel>();
-        allItems.add(new DashBoardIconModel(Constants.SCREEN.MYPROFILE, "My Profile", R.drawable.ic_profile));
-        allItems.add(new DashBoardIconModel(Constants.SCREEN.JOBFORYOU, "Job For You", R.drawable.ic_jobs));
-        allItems.add(new DashBoardIconModel(Constants.SCREEN.APPOITMENT, "Appoitment", R.drawable.ic_appoitment));
-        allItems.add(new DashBoardIconModel(Constants.SCREEN.ABOUTCOLLAGE, "About Us", R.drawable.ic_contact));
-        allItems.add(new DashBoardIconModel(Constants.SCREEN.EVENTSANDNEWS, "Event and News", R.drawable.ic_event));
-        allItems.add(new DashBoardIconModel(Constants.SCREEN.DOYOUKNOW, "Do You Know ", R.drawable.ic_guide_line));
-        allItems.add(new DashBoardIconModel(Constants.SCREEN.NOTIFICATION, "Notification", R.drawable.ic_notification_big));
-        allItems.add(new DashBoardIconModel(Constants.SCREEN.TERMSOFUSER, "Terms and Condition", R.drawable.ic_terms_condition));
-        allItems.add(new DashBoardIconModel(Constants.SCREEN.SETTINGS, "Settings", R.drawable.ic_settings));
+        allItems.add(new DashBoardIconModel(Constants.SCREEN.MYPROFILE, "My Profile", R.drawable.ic_profile_small));
+        allItems.add(new DashBoardIconModel(Constants.SCREEN.JOBFORYOU, "Job For You", R.drawable.ic_jobs_small));
+        allItems.add(new DashBoardIconModel(Constants.SCREEN.APPOITMENT, "Appointment", R.drawable.ic_appoitment_small));
+        allItems.add(new DashBoardIconModel(Constants.SCREEN.ABOUTCOLLAGE, "About Us", R.drawable.ic_contact_small));
+        allItems.add(new DashBoardIconModel(Constants.SCREEN.EVENTSANDNEWS, "Event and News", R.drawable.ic_event_small));
+        allItems.add(new DashBoardIconModel(Constants.SCREEN.DOYOUKNOW, "Do You Know ", R.drawable.ic_guide_line_small));
+        allItems.add(new DashBoardIconModel(Constants.SCREEN.NOTIFICATION, "Notification", R.drawable.ic_notification_big_small));
+        allItems.add(new DashBoardIconModel(Constants.SCREEN.TERMSOFUSER, "Terms and Condition", R.drawable.ic_terms_condition_small));
+        allItems.add(new DashBoardIconModel(Constants.SCREEN.SETTINGS, "Settings", R.drawable.ic_settings_small));
 
 
         return allItems;
@@ -184,7 +186,7 @@ public class MainActivity extends BaseActivity implements VPDashBoardAdapter.Sli
                 startDesireIntent(JobListActivity.class, mContext, false, 0, null);
                 break;
             case APPOITMENT:
-                HelperMethods.showToast("APPOITMENT", mContext);
+                startDesireIntent(AppointmentActivity.class, mContext, false, 0, null);
                 break;
             case ABOUTCOLLAGE:
                 HelperMethods.showToast("ABOUTCOLLAGE", mContext);
@@ -196,7 +198,7 @@ public class MainActivity extends BaseActivity implements VPDashBoardAdapter.Sli
                 HelperMethods.showToast("DOYOUKNOW", mContext);
                 break;
             case NOTIFICATION:
-                HelperMethods.showToast("NOTIFICATION", mContext);
+                startDesireIntent(NotificationActivity.class, mContext, false, 0, null);
                 break;
             case TERMSOFUSER:
                 HelperMethods.showToast("TERMSOFUSER", mContext);
