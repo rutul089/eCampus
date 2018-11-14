@@ -27,11 +27,18 @@
         app:myFont="@string/SEMIBOLD" />
 
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/_220sdp"
         android:layout_height="@dimen/_300sdp"
+        tools:background="@color/colorWhite"
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/dimen_20">
 
+
+
+        <rutul.com.ecampus.components.CustomViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_350sdp" />
         <rutul.com.ecampus.components.CustomTextView
             android:id="@+id/tv_counter"
             android:layout_width="wrap_content"
@@ -43,18 +50,13 @@
             android:layout_marginBottom="8dp"
             android:gravity="center"
             android:padding="@dimen/dimen_8"
-            android:text="sadsad"
+            android:text="3/4"
             android:textColor="@color/colorGray"
-            android:textSize="@dimen/dimen_66px"
+            android:textSize="@dimen/dimen_54px"
             app:layout_constraintBottom_toBottomOf="@+id/view_pager"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:myFont="@string/REGULAR" />
-
-        <rutul.com.ecampus.components.CustomViewPager
-            android:id="@+id/view_pager"
-            android:layout_width="@dimen/_250sdp"
-            android:layout_height="@dimen/_350sdp" />
     </RelativeLayout>
 
     <LinearLayout
