@@ -15,7 +15,8 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import rutul.com.ecampus.activity.AppointmentActivity;
+import rutul.com.ecampus.activity.AboutUsActivity;
+import rutul.com.ecampus.activity.ApplyiedJobActivity;
 import rutul.com.ecampus.activity.BaseActivity;
 import rutul.com.ecampus.activity.EventDetailActivity;
 import rutul.com.ecampus.activity.EventListActivity;
@@ -159,7 +160,7 @@ public class MainActivity extends BaseActivity implements VPDashBoardAdapter.Sli
         List<DashBoardIconModel> allItems = new ArrayList<DashBoardIconModel>();
         allItems.add(new DashBoardIconModel(Constants.SCREEN.MYPROFILE, "My Profile", R.drawable.ic_profile_small));
         allItems.add(new DashBoardIconModel(Constants.SCREEN.JOBFORYOU, "Job For You", R.drawable.ic_jobs_small));
-        allItems.add(new DashBoardIconModel(Constants.SCREEN.APPOITMENT, "Appointment", R.drawable.ic_appoitment_small));
+        allItems.add(new DashBoardIconModel(Constants.SCREEN.APPOITMENT, "Applied Job", R.drawable.ic_appoitment_small));
         allItems.add(new DashBoardIconModel(Constants.SCREEN.ABOUTCOLLAGE, "About Us", R.drawable.ic_contact_small));
         allItems.add(new DashBoardIconModel(Constants.SCREEN.EVENTSANDNEWS, "Event and News", R.drawable.ic_event_small));
         allItems.add(new DashBoardIconModel(Constants.SCREEN.DOYOUKNOW, "Do You Know ", R.drawable.ic_guide_line_small));
@@ -186,10 +187,10 @@ public class MainActivity extends BaseActivity implements VPDashBoardAdapter.Sli
                 startDesireIntent(JobListActivity.class, mContext, false, 0, null);
                 break;
             case APPOITMENT:
-                startDesireIntent(AppointmentActivity.class, mContext, false, 0, null);
+                startDesireIntent(ApplyiedJobActivity.class, mContext, false, 0, null);
                 break;
             case ABOUTCOLLAGE:
-                HelperMethods.showToast("ABOUTCOLLAGE", mContext);
+                startDesireIntent(AboutUsActivity.class, mContext, false, 0, null);
                 break;
             case EVENTSANDNEWS:
                 startDesireIntent(EventListActivity.class, mContext, false, 0, null);

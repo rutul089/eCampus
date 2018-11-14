@@ -22,7 +22,7 @@
             android:text="Openxcell Technolabs Pvt Ltd"
             android:textColor="@color/colorBlack"
             android:textSize="@dimen/dimen_64px"
-            app:myFont="@string/REGULAR" />
+            app:myFont="@string/SEMIBOLD" />
 
         <rutul.com.ecampus.components.CustomTextView
             android:id="@+id/tv_call"

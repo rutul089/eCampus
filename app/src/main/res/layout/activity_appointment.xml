@@ -1,24 +1,295 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
     tools:context=".activity.AppointmentActivity">
 
     <include
         android:id="@+id/header"
         layout="@layout/header" />
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_appointment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/colorWhite"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header"
-        tools:listitem="@layout/row_job_list" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</android.support.constraint.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:orientation="vertical">
+
+            <rutul.com.ecampus.components.CustomTextView
+                android:id="@+id/tv_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:gravity="center"
+                android:text="Enter your information"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dimen_66px"
+                app:myFont="@string/REGULAR" />
+
+            <rutul.com.ecampus.components.CustomTextView
+                android:id="@+id/tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:gravity="center"
+                android:text="Please fill all fields correctly"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/REGULAR" />
+
+            <rutul.com.ecampus.components.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="Personal Detail"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/SEMIBOLD" />
+
+            <rutul.com.ecampus.components.CustomEditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_110px"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background="@drawable/stroke_light_blue_square"
+                android:gravity="center_vertical"
+                android:hint="Enter your name "
+                android:imeOptions="actionNext"
+                android:inputType="textNoSuggestions|text"
+                android:lines="1"
+                android:maxLines="1"
+                android:padding="@dimen/dimen_8"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/REGULAR" />
+
+            <rutul.com.ecampus.components.CustomEditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_110px"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background="@drawable/stroke_light_blue_square"
+                android:gravity="center_vertical"
+                android:hint="Enter your phone"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:lines="1"
+                android:padding="@dimen/dimen_8"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/REGULAR" />
+
+            <rutul.com.ecampus.components.CustomEditText
+                android:id="@+id/et_dob"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_110px"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background="@drawable/stroke_light_blue_square"
+                android:gravity="center_vertical"
+                android:hint="Enter your birthday"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:lines="1"
+                android:maxLines="1"
+                android:padding="@dimen/dimen_8"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/REGULAR" />
+
+            <rutul.com.ecampus.components.CustomEditText
+                android:id="@+id/et_property_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background="@drawable/stroke_light_blue_square"
+                android:gravity="start"
+                android:hint="Enter your address"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:lines="3"
+                android:padding="@dimen/dimen_8"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray"
+                android:textSize="@dimen/dimen_54px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_dob"
+                app:myFont="@string/REGULAR" />
+
+            <rutul.com.ecampus.components.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="Education Detail"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/SEMIBOLD" />
+
+            <rutul.com.ecampus.components.CustomEditText
+                android:id="@+id/et_graduation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_110px"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background="@drawable/stroke_light_blue_square"
+                android:gravity="center_vertical"
+                android:hint="Graduation"
+                android:imeOptions="actionNext"
+                android:inputType="textNoSuggestions|text"
+                android:lines="1"
+                android:maxLines="1"
+                android:padding="@dimen/dimen_8"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/REGULAR" />
+
+            <rutul.com.ecampus.components.CustomEditText
+                android:id="@+id/et_post_graduation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_110px"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background="@drawable/stroke_light_blue_square"
+                android:gravity="center_vertical"
+                android:hint="Post Graduation"
+                android:imeOptions="actionNext"
+                android:inputType="textNoSuggestions|text"
+                android:lines="1"
+                android:maxLines="1"
+                android:padding="@dimen/dimen_8"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/REGULAR" />
+
+            <rutul.com.ecampus.components.CustomEditText
+                android:id="@+id/et_doctorate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_110px"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background="@drawable/stroke_light_blue_square"
+                android:gravity="center_vertical"
+                android:hint="Doctorate Degree"
+                android:imeOptions="actionNext"
+                android:inputType="textNoSuggestions|text"
+                android:lines="1"
+                android:maxLines="1"
+                android:padding="@dimen/dimen_8"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/REGULAR" />
+
+            <rutul.com.ecampus.components.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="Work Detail"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/SEMIBOLD" />
+
+            <rutul.com.ecampus.components.CustomEditText
+                android:id="@+id/et_designation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_110px"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background="@drawable/stroke_light_blue_square"
+                android:gravity="center_vertical"
+                android:hint="Desigation"
+                android:imeOptions="actionNext"
+                android:inputType="textNoSuggestions|text"
+                android:lines="1"
+                android:maxLines="1"
+                android:padding="@dimen/dimen_8"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/REGULAR" />
+
+            <rutul.com.ecampus.components.CustomEditText
+                android:id="@+id/et_organiation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_110px"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background="@drawable/stroke_light_blue_square"
+                android:gravity="center_vertical"
+                android:hint="Organisation"
+                android:imeOptions="actionNext"
+                android:inputType="textNoSuggestions|text"
+                android:lines="1"
+                android:maxLines="1"
+                android:padding="@dimen/dimen_8"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/REGULAR" />
+
+            <rutul.com.ecampus.components.CustomEditText
+                android:id="@+id/et_job_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background="@drawable/stroke_light_blue_square"
+                android:gravity="start"
+                android:hint="Job Profile"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:lines="3"
+                android:padding="@dimen/dimen_8"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray"
+                android:textSize="@dimen/dimen_54px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_dob"
+                app:myFont="@string/REGULAR" />
+
+            <rutul.com.ecampus.components.CustomEditText
+                android:id="@+id/et_duration"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_110px"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background="@drawable/stroke_light_blue_square"
+                android:gravity="center_vertical"
+                android:hint="Duratoin in Word"
+                android:imeOptions="actionNext"
+                android:inputType="textNoSuggestions|text"
+                android:lines="1"
+                android:maxLines="1"
+                android:padding="@dimen/dimen_8"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/REGULAR" />
+
+            <rutul.com.ecampus.components.CustomButton
+                android:id="@+id/bt_apply"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_bg_blue"
+                android:text="@string/btn_apply"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/dimen_60px"
+                app:myFont="@string/SEMIBOLD" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

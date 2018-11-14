@@ -3,12 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.ReviewFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <rutul.com.ecampus.components.CustomTextView
+       android:id="@+id/tv_"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+        android:layout_gravity="center"
+       android:padding="@dimen/dimen_8"
+       android:text="coming soon"
+       android:textColor="@color/colorBlack"
+       android:textSize="@dimen/dimen_54px"
+       app:myFont="@string/SEMIBOLD" />
+
 
 </FrameLayout>

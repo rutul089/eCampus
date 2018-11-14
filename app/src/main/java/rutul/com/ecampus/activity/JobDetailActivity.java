@@ -51,6 +51,7 @@ public class JobDetailActivity extends BaseActivity implements View.OnClickListe
     @Override
     public void setListener() {
         ivBack.setOnClickListener(this);
+        bt_apply.setOnClickListener(this);
     }
 
     @Override
@@ -80,6 +81,9 @@ public class JobDetailActivity extends BaseActivity implements View.OnClickListe
         switch (view.getId()) {
             case R.id.ivBack:
                 finish();
+                break;
+            case R.id.bt_apply:
+                startDesireIntent(AppointmentActivity.class, mContext, false, 0, mBundle);
                 break;
         }
     }
