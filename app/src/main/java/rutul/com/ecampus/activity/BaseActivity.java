@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import rutul.com.ecampus.R;
 import rutul.com.ecampus.components.CustomTextView;
 import rutul.com.ecampus.utils.ApplicationSharedPreferences;
+import rutul.com.ecampus.utils.Constants;
 import rutul.com.ecampus.utils.FragmentUtil;
 import rutul.com.ecampus.utils.runtimepermissionhelper.ActivityManagePermission;
 
@@ -23,11 +24,11 @@ public abstract class BaseActivity extends ActivityManagePermission {
     public Context mContext;
     public BaseActivity mActivity;
     public Bundle mBundle = new Bundle();
+    protected Drawable dividerDrawable;
     private ConstraintLayout clHeaderContainer;
     private ImageView ivHeaderBg, ivBack, ivNotification;
     private CustomTextView tvAppTitle;
     private int mivHeaderBgColor, mHeaderTittleColor;
-    protected Drawable dividerDrawable;
 
     public void setHeaderView(@Nullable int ivHeaderBgColor, @Nullable boolean showBackIcon,
                               @Nullable String headerTitle, @Nullable int headerTitleColor, @Nullable boolean showNotificationIcon) {
@@ -93,6 +94,27 @@ public abstract class BaseActivity extends ActivityManagePermission {
             startActivity(desireIntent);
         }
     }
+
+    public void logoutFromApp(int responseCode) {
+        if (isUserLoggedIn()) {
+            ApplicationSharedPreferences.set(getResources().getString(R.string.PREFS_LOGGED_IN), false, mContext);
+            ApplicationSharedPreferences.saveObject(getString(R.string.PREFS_LOGGED_IN_USER_DETAILS), null, mContext);
+
+            Bundle bundle = new Bundle();
+            bundle.putInt(Constants.REQ_TAP_KEY, Constants.REQ_HOME_SCREEN_SESSION_LOGOUT_CODE);
+            flushPreferences();
+            startDesireIntent(LoginActivity.class, mContext, true, Constants.REQ_HOME_SCREEN_SESSION_LOGOUT_CODE, bundle);
+            finish();
+        }
+
+    }
+
+    public void flushPreferences() {
+        ApplicationSharedPreferences.saveObject(getString(R.string.PREFS_LOGGED_IN_USER_DETAILS), null, mContext);
+        ApplicationSharedPreferences.setFirstTimeLaunch(mContext,true);
+    }
+
+
 
 //    public void addFragment(AppCompatActivity activity, Fragment fragment, String fragmentTag, FragmentUtil.ANIMATION_TYPE animationType) {
 //        new FragmentUtil().addFragment(activity,

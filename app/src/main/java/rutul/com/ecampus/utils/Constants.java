@@ -13,7 +13,11 @@ public class Constants {
     public static final String TAG_APPOINTMENT = "Appointment";
     public static final String TAG_APPLIED_JOB = "Applied Job";
     public static final String TAG_ABOUT_US = "About Us";
+    public static final String TAG_MY_PROFILE = "My Profile";
 
+
+    public static final String REQ_TAP_KEY = "req_tap_key";
+    public static final int REQ_HOME_SCREEN_SESSION_LOGOUT_CODE = 1000;
     public enum SCREEN {
         MYPROFILE("My Profile"),
         JOBFORYOU("Job For you"),

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_blue"
+    android:orientation="vertical"
+    tools:context=".activity.MyProfile">
+
+    <rutul.com.ecampus.components.CustomTextView
+        android:id="@+id/tv_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginEnd="@dimen/dimen_10"
+        android:gravity="center"
+        android:padding="@dimen/dimen_8"
+        android:text="Welcome to e-Campuse"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dimen_66px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:myFont="@string/SEMIBOLD" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_20">
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:id="@+id/tv_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:padding="@dimen/dimen_8"
+            android:text="sadsad"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/dimen_66px"
+            app:layout_constraintBottom_toBottomOf="@+id/view_pager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:myFont="@string/REGULAR" />
+
+        <rutul.com.ecampus.components.CustomViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_350sdp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dots_height"
+        android:layout_marginStart="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginEnd="@dimen/dimen_5"
+        android:layout_marginBottom="@dimen/dimen_5"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <rutul.com.ecampus.components.CustomButton
+        android:id="@+id/btn_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginEnd="@dimen/dimen_10"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:background="@null"
+        android:text="Skip Tour"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dimen_54px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:myFont="@string/REGULAR" />
+
+</LinearLayout>

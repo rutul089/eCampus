@@ -5,8 +5,8 @@
     <color name="colorAccent">@color/colorCyan</color>
 
     <!--Application Main Theme Color Set-->
-    <color name="colorBlue">#2B78D4</color>
-    <color name="colorLightCyan">#38ABB2</color>
+    <color name="colorBlue">#2B78D4</color> <!-- #2883D2 , #00BAFF-->
+    <color name="colorLightCyan">#43BFC7</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlack">#333333</color>
     <color name="colorGray">#666666</color>
@@ -15,6 +15,22 @@
     <color name="colorLightBlue">#3AB5BD</color>
     <color name="colorTextJobList">#00829A</color>
     <color name="colorDarkGreen">#0a9465</color>
+    <color name="colorStatus">#FF2CC88B</color>
+    <color name="dot_light_screen1">#ffffff</color>
+    <color name="dot_dark_screen1">#50ffffff</color>
     <!-- 8D949C -->
     <!-- End -->
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen1</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen1</item>
+    </array>
 </resources>

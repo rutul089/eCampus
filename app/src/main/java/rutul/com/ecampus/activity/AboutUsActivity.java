@@ -13,6 +13,7 @@ public class AboutUsActivity extends BaseActivity implements View.OnClickListene
     private ImageView ivBack, iv_facebook,
             iv_twitter,
             iv_google,
+            iv_linkedin,
             iv_youtube;
 
     @Override
@@ -27,6 +28,7 @@ public class AboutUsActivity extends BaseActivity implements View.OnClickListene
         iv_facebook = findViewById(R.id.iv_facebook);
         iv_twitter = findViewById(R.id.iv_twitter);
         iv_google = findViewById(R.id.iv_google);
+        iv_linkedin = findViewById(R.id.iv_linkedin);
         iv_youtube = findViewById(R.id.iv_youtube);
     }
 
@@ -37,6 +39,7 @@ public class AboutUsActivity extends BaseActivity implements View.OnClickListene
         iv_twitter.setOnClickListener(this);
         iv_google.setOnClickListener(this);
         iv_youtube.setOnClickListener(this);
+        iv_linkedin.setOnClickListener(this);
     }
 
     @Override
@@ -51,16 +54,19 @@ public class AboutUsActivity extends BaseActivity implements View.OnClickListene
                 finish();
                 break;
             case R.id.iv_facebook:
-                HelperMethods.showToast("Facebook",mContext);
+                HelperMethods.showToast("Facebook", mContext);
                 break;
             case R.id.iv_twitter:
-                HelperMethods.showToast("Twitter",mContext);
+                HelperMethods.showToast("Twitter", mContext);
                 break;
             case R.id.iv_google:
-                HelperMethods.showToast("Google",mContext);
+                HelperMethods.showToast("Google", mContext);
                 break;
             case R.id.iv_youtube:
-                HelperMethods.showToast("Youtube",mContext);
+                HelperMethods.showToast("Youtube", mContext);
+                break;
+            case R.id.iv_linkedin:
+                HelperMethods.showToast("Linkedin", mContext);
                 break;
         }
     }

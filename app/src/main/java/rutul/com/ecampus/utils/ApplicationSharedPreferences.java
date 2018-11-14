@@ -9,6 +9,7 @@ import com.google.gson.JsonSyntaxException;
 public class ApplicationSharedPreferences {
 
     public static final String APPLICATION_PREFERENCES_NAME = "eCampuse";
+    private static final String IS_FIRST_TIME_LAUNCH = "IsFirstTimeLaunch";
 
     public static void deleteSharedPrefs(Context context) {
         SharedPreferences preferences = context.getSharedPreferences(APPLICATION_PREFERENCES_NAME, Context.MODE_PRIVATE);
@@ -172,5 +173,19 @@ public class ApplicationSharedPreferences {
         }
         return retrievedObj;
     }
+
+    public static void setFirstTimeLaunch(Context context, boolean isFirstTime) {
+        SharedPreferences preferences = context.getSharedPreferences(APPLICATION_PREFERENCES_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor edit = preferences.edit();
+        edit.putBoolean(IS_FIRST_TIME_LAUNCH, isFirstTime);
+        edit.commit();
+        edit.apply();
+    }
+
+    public static boolean isFirstTimeLaunch(Context context) {
+        SharedPreferences preferences = context.getSharedPreferences(APPLICATION_PREFERENCES_NAME, Context.MODE_PRIVATE);
+        return preferences.getBoolean(IS_FIRST_TIME_LAUNCH, true);
+    }
+
 
 }

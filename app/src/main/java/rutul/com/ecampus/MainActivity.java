@@ -21,6 +21,7 @@ import rutul.com.ecampus.activity.BaseActivity;
 import rutul.com.ecampus.activity.EventDetailActivity;
 import rutul.com.ecampus.activity.EventListActivity;
 import rutul.com.ecampus.activity.JobListActivity;
+import rutul.com.ecampus.activity.MyProfile;
 import rutul.com.ecampus.activity.NotificationActivity;
 import rutul.com.ecampus.adapter.DashBoardIconAdapter;
 import rutul.com.ecampus.adapter.VPDashBoardAdapter;
@@ -181,7 +182,7 @@ public class MainActivity extends BaseActivity implements VPDashBoardAdapter.Sli
         mLastClickTime = SystemClock.elapsedRealtime();
         switch (SCREEN) {
             case MYPROFILE:
-                HelperMethods.showToast("MYPROFILE", mContext);
+                startDesireIntent(MyProfile.class, mContext, false, 0, null);
                 break;
             case JOBFORYOU:
                 startDesireIntent(JobListActivity.class, mContext, false, 0, null);
@@ -205,7 +206,7 @@ public class MainActivity extends BaseActivity implements VPDashBoardAdapter.Sli
                 HelperMethods.showToast("TERMSOFUSER", mContext);
                 break;
             case SETTINGS:
-                HelperMethods.showToast("SETTINGS", mContext);
+                logoutFromApp(0);
                 break;
             default:
                 break;

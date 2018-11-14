@@ -46,7 +46,7 @@
                 android:layout_height="1dp"
                 android:layout_margin="@dimen/dimen_8"
                 android:alpha="0.5"
-                android:background="@color/colorGreen" />
+                android:background="#00BAFF" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -149,7 +149,16 @@
                     android:layout_width="@dimen/height_110px"
                     android:layout_height="@dimen/height_110px"
                     android:layout_marginStart="@dimen/dimen_8"
+                    android:layout_marginEnd="@dimen/dimen_8"
                     android:src="@drawable/ic_youtube" />
+
+                <ImageView
+                    android:id="@+id/iv_linkedin"
+                    android:layout_width="@dimen/height_110px"
+                    android:layout_height="@dimen/height_110px"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:layout_marginEnd="@dimen/dimen_8"
+                    android:src="@drawable/ic_linkedin" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

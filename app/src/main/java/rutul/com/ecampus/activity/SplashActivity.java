@@ -5,7 +5,6 @@ import android.os.Handler;
 import android.view.Window;
 import android.view.WindowManager;
 
-import rutul.com.ecampus.MainActivity;
 import rutul.com.ecampus.R;
 import rutul.com.ecampus.utils.ApplicationSharedPreferences;
 import rutul.com.ecampus.utils.Constants;
@@ -68,7 +67,7 @@ public class SplashActivity extends BaseActivity {
 
     private void proceedToTheNextActivity() {
         if (isUserLoggedIn()) {
-            startDesireIntent(MainActivity.class, mContext, false, 0, null);
+            startDesireIntent(WelcomeActivity.class, mContext, false, 0, null);
             finish();
         } else {
             startDesireIntent(LoginActivity.class, mContext, false, 0, null);

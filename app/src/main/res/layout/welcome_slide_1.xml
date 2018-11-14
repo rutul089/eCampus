@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="@dimen/_350sdp"
+    android:layout_gravity="center"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/height_360px"
+            android:layout_height="@dimen/height_360px"
+            android:src="@drawable/ic_notification_big" />
+
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:id="@+id/tv_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dimen_8"
+            android:text="Hello Food"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_64px"
+            app:myFont="@string/SEMIBOLD" />
+
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:layout_marginEnd="@dimen/dimen_20"
+
+            android:text="The easiest way to order food from your favourite restaurant!"
+            android:textAlignment="center"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/dimen_54px" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

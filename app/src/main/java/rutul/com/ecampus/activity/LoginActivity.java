@@ -70,7 +70,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
 
     private void userLogin() {
         ApplicationSharedPreferences.set(getResources().getString(R.string.PREFS_LOGGED_IN), true, mContext);
-        startDesireIntent(MainActivity.class, mContext, false, 0, null);
+        //startDesireIntent(MainActivity.class, mContext, false, 0, null);
+        startDesireIntent(WelcomeActivity.class, mContext, false, 0, null);
         finish();
     }
 
