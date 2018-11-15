@@ -237,6 +237,64 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/dimen_10"
                 android:layout_marginTop="@dimen/dimen_20"
+                android:text="Key Skills"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dimen_54px"
+                app:myFont="@string/SEMIBOLD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <rutul.com.ecampus.components.CustomEditText
+                    android:id="@+id/et_key_skills"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_110px"
+                    android:layout_marginEnd="@dimen/dimen_10"
+                    android:layout_weight="2"
+                    android:background="@drawable/stroke_light_blue_square"
+                    android:gravity="center_vertical"
+                    android:hint="Key Skills"
+                    android:imeOptions="actionNext"
+                    android:inputType="textNoSuggestions|text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="@dimen/dimen_8"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorGray"
+                    android:textSize="@dimen/dimen_54px"
+                    app:myFont="@string/REGULAR" />
+
+                <ImageButton
+                    android:id="@+id/ib_add_label"
+                    android:layout_width="@dimen/height_90px"
+                    android:layout_height="@dimen/height_90px"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/ic_add"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <rutul.com.ecampus.components.labelui.AutoLabelUI
+                android:id="@+id/label_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:layout_marginBottom="@dimen/dimen_8" />
+
+            <rutul.com.ecampus.components.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_20"
                 android:text="Language Known"
                 android:textColor="@color/colorBlack"
                 android:textSize="@dimen/dimen_54px"
@@ -261,14 +319,15 @@
                 android:textColorHint="@color/colorGray"
                 android:textSize="@dimen/dimen_54px"
                 app:myFont="@string/REGULAR" />
+
             <rutul.com.ecampus.components.CustomButton
                 android:id="@+id/bt_apply"
                 android:layout_width="match_parent"
-                android:layout_marginTop="@dimen/dimen_8"
-                android:layout_marginBottom="@dimen/dimen_8"
-                android:layout_marginStart="@dimen/dimen_10"
-                android:layout_marginEnd="@dimen/dimen_10"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:layout_marginBottom="@dimen/dimen_8"
                 android:background="@drawable/main_bg_blue"
                 android:text="@string/btn_save"
                 android:textAllCaps="false"

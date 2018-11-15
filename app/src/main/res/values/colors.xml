@@ -17,6 +17,7 @@
     <color name="colorDarkGreen">#0a9465</color>
     <color name="colorStatus">#FF2CC88B</color>
     <color name="dot_light_screen1">#ffffff</color>
+    <color name="default_background_label">@color/colorBlue</color>
     <color name="dot_dark_screen1">#50ffffff</color>
     <!-- 8D949C -->
     <!-- End -->

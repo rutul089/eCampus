@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llLabel"
+    style="@style/Label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <rutul.com.ecampus.components.CustomTextView
+        android:id="@+id/tvLabel"
+        style="@style/LabelTextView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:text="asdasda"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dimen_54px"
+        app:myFont="@string/REGULAR" />
+
+    <ImageView
+        android:layout_marginStart="@dimen/dimen_8"
+        android:id="@+id/ivCross"
+        android:layout_width="@dimen/height_90px"
+        android:layout_height="@dimen/height_90px"
+        android:src="@drawable/cross" />
+
+</LinearLayout>
+
+
