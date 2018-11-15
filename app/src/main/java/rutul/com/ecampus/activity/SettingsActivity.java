@@ -1,20 +1,26 @@
 package rutul.com.ecampus.activity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import rutul.com.ecampus.R;
 import rutul.com.ecampus.components.CustomButton;
+import rutul.com.ecampus.components.CustomRadioButton;
 import rutul.com.ecampus.utils.Constants;
 
-public class SettingsActivity extends BaseActivity implements View.OnClickListener {
+public class SettingsActivity extends BaseActivity implements View.OnClickListener, RadioGroup.OnCheckedChangeListener {
     private static final String TAG = SettingsActivity.class.getSimpleName();
+    CustomRadioButton rb_top_yes,
+            rb_top_no;
     private LinearLayout ll_terms, ll_change_pwd, ll_block_cpny;
     private CustomButton btn_logout;
     private ImageView ivBack;
-
+    private RadioGroup toogle_notification;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +35,10 @@ public class SettingsActivity extends BaseActivity implements View.OnClickListen
         ll_block_cpny = findViewById(R.id.ll_block_cpny);
         ivBack = findViewById(R.id.ivBack);
         btn_logout = findViewById(R.id.btn_logout);
+        toogle_notification = findViewById(R.id.toogle_notification);
+
+        rb_top_no = findViewById(R.id.rb_top_no);
+        rb_top_yes = findViewById(R.id.rb_top_yes);
     }
 
     @Override
@@ -38,7 +48,11 @@ public class SettingsActivity extends BaseActivity implements View.OnClickListen
         ll_change_pwd.setOnClickListener(this);
         ll_block_cpny.setOnClickListener(this);
         ivBack.setOnClickListener(this);
+        rb_top_no.setOnClickListener(this);
+        rb_top_yes.setOnClickListener(this);
+        toogle_notification.setOnCheckedChangeListener(this);
     }
+
 
     @Override
     public void prepareViews() {
@@ -57,6 +71,20 @@ public class SettingsActivity extends BaseActivity implements View.OnClickListen
             case R.id.ll_change_pwd:
                 startDesireIntent(ChangePassword.class, mContext, false, 0, null);
                 break;
+            case R.id.rb_top_no:
+                rb_top_no.setTextColor(Color.WHITE);
+                rb_top_yes.setTextColor(Color.BLACK);
+
+                break;
+            case R.id.rb_top_yes:
+                rb_top_yes.setTextColor(Color.WHITE);
+                rb_top_no.setTextColor(Color.BLACK);
+                break;
         }
+    }
+
+    @Override
+    public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
     }
 }

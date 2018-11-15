@@ -128,9 +128,87 @@
     </LinearLayout>
 
     <View
+        android:id="@+id/div_3"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_below="@+id/ll_block_cpny"
+        android:alpha="0.5"
+        android:background="@color/colorBlue" />
+
+    <LinearLayout
+        android:id="@+id/ll_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/div_3"
+        android:layout_margin="@dimen/dimen_10"
+        android:gravity=""
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_110px"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="Notifications"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_54px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include"
+            app:myFont="@string/SEMIBOLD" />
+
+        <RadioGroup
+
+            android:id="@+id/toogle_notification"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/toogle_bg"
+            android:checkedButton="@+id/rb_top_yes"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <rutul.com.ecampus.components.CustomRadioButton
+                android:id="@+id/rb_top_yes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_widget_background"
+                android:button="@null"
+                android:gravity="center"
+                android:text="YES"
+                android:textColor="@color/colorWhite"
+                app:myFont="@string/MEDIUM" />
+
+            <rutul.com.ecampus.components.CustomRadioButton
+                android:id="@+id/rb_top_no"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_widget_background"
+                android:button="@null"
+                android:gravity="center"
+                android:text="NO"
+                android:textColor="@color/colorBlack"
+                app:myFont="@string/MEDIUM" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_no"
         android:alpha="0.5"
         android:background="@color/colorBlue" />
 
