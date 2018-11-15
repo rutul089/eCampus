@@ -14,6 +14,7 @@ public class Constants {
     public static final String TAG_APPLIED_JOB = "Applied Job";
     public static final String TAG_ABOUT_US = "About Us";
     public static final String TAG_MY_PROFILE = "My Profile";
+    public static final String TAG_SETTINGS = "Settings";
 
 
     public static final String REQ_TAP_KEY = "req_tap_key";

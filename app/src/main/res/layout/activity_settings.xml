@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".activity.SettingsActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/header" />
+
+    <LinearLayout
+        android:id="@+id/ll_terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include"
+        android:layout_margin="@dimen/dimen_10"
+        android:orientation="vertical">
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Communications &amp; Privacy"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_54px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include"
+            app:myFont="@string/SEMIBOLD" />
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:lineSpacingExtra="@dimen/dimen_2"
+            android:text="Control the visiblity of your profile and type of email and mobile notifications you want to recive"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_48px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include"
+            app:myFont="@string/REGULAR" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vi_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_terms"
+        android:alpha="0.5"
+        android:background="@color/colorBlue" />
+
+    <LinearLayout
+        android:id="@+id/ll_change_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vi_divider"
+        android:layout_margin="@dimen/dimen_10"
+        android:orientation="vertical">
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Account"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_54px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include"
+            app:myFont="@string/SEMIBOLD" />
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:lineSpacingExtra="@dimen/dimen_2"
+            android:text="Change your password"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_48px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include"
+            app:myFont="@string/REGULAR" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/id_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_change_pwd"
+        android:alpha="0.5"
+        android:background="@color/colorBlue" />
+
+    <LinearLayout
+        android:id="@+id/ll_block_cpny"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_1"
+        android:layout_margin="@dimen/dimen_10"
+        android:orientation="vertical">
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blocked Companies"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_54px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include"
+            app:myFont="@string/SEMIBOLD" />
+
+        <rutul.com.ecampus.components.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:lineSpacingExtra="@dimen/dimen_2"
+            android:text="Choose the companies you do not want to show your profile to on e-Campus"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_48px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include"
+            app:myFont="@string/REGULAR" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_block_cpny"
+        android:alpha="0.5"
+        android:background="@color/colorBlue" />
+
+    <rutul.com.ecampus.components.CustomButton
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:background="@drawable/main_bg_blue"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dimen_60px"
+        app:myFont="@string/REGULAR" />
+</RelativeLayout>

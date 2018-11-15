@@ -23,6 +23,7 @@ import rutul.com.ecampus.activity.EventListActivity;
 import rutul.com.ecampus.activity.JobListActivity;
 import rutul.com.ecampus.activity.MyProfile;
 import rutul.com.ecampus.activity.NotificationActivity;
+import rutul.com.ecampus.activity.SettingsActivity;
 import rutul.com.ecampus.adapter.DashBoardIconAdapter;
 import rutul.com.ecampus.adapter.VPDashBoardAdapter;
 import rutul.com.ecampus.components.CustomViewPager;
@@ -206,7 +207,7 @@ public class MainActivity extends BaseActivity implements VPDashBoardAdapter.Sli
                 HelperMethods.showToast("TERMSOFUSER", mContext);
                 break;
             case SETTINGS:
-                logoutFromApp(0);
+                startDesireIntent(SettingsActivity.class, mContext, false, 0, null);
                 break;
             default:
                 break;
